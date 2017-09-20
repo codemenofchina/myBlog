@@ -16,10 +16,23 @@ public interface UserDao {
      */
     List<User> queryAll(@Param("offset") int offset, @Param("limit") int limit);
 
-    
+
     /**
      * 添加用户
+     * @param user
      */
-    void addUser(User user);
-	
+    int addUser(User user);
+
+    /**
+     * 修改用户
+     * @param user
+     */
+    int updateUser(User user);
+
+    /**
+     * 根据用户名查询用户信息
+     * @param userName 用户名
+     * @return
+     */
+	User queryUserByUserName(@Param("userName") String userName);
 }

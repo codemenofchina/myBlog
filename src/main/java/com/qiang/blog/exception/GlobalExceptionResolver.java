@@ -39,6 +39,7 @@ public class GlobalExceptionResolver implements HandlerExceptionResolver {
             writer.write(JSON.toJSONString(result));
             writer.flush();
         } catch (Exception e) {
+            e.printStackTrace();
             LOG.error("Exception:",e);
         }
         return null;

@@ -12,8 +12,25 @@
     <insert id="addUser" useGeneratedKeys="true" keyProperty="id">
         INSERT
           INTO user
-          (user_account, password, user_name, user_type, user_describe)
+          (user_id, user_name, password, real_name)
         VALUES
-        (#{userAccount}, #{password}, #{userName}, #{userType}, #{userDescribe})
+        (#{userId}, #{userName}, #{password}, #{realName})
     </insert>
+
+    <update id="updateUser" useGeneratedKeys="true" keyProperty="id">
+        UPDATE
+          USER
+        SET
+          password = #{password}, real_name = #{realName}
+        WHERE
+          user_id = #{userId}
+    </update>
+
+    <select id="queryUserByUserName" resultType="User">
+        SELECT *
+        FROM user
+        WHERE
+          user_name = #{userName}
+        limit 1
+    </select>
 </mapper>

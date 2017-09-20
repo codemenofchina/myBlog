@@ -1,9 +1,9 @@
-package com.qiang.blog.entity;
+package com.qiang.blog.vo;
 
 /**
- * Created by xiaoqiang on 2017/7/2.
+ * Created by chenqiang on 2017/9/16.
  */
-public class User {
+public class UserVO {
 
     private String userId;
     private String userName;

@@ -22,6 +22,20 @@ public interface UserService {
 
     /**
      * 添加用户
+     * @param user
      */
-    void addUser(User user);
+    int addUser(User user);
+
+
+    /**
+     * 修改用户
+     * @param user
+     */
+    int updateUser(User user);
+
+    /**
+     * 用户登录验证
+     * @param user
+     */
+    boolean login(User user);
 }

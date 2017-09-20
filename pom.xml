@@ -238,6 +238,19 @@
       <version>2.10.2</version>
     </dependency>
 
+    <!--beanutils1.8.3 jar包-->
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+      <version>1.8.3</version>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.10</version>
+    </dependency>
+
   </dependencies>
 
   <build>

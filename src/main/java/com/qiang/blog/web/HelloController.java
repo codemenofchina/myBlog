@@ -18,13 +18,13 @@ public class HelloController {
     UserService userService;
     @RequestMapping(value = "/say", method = RequestMethod.GET)
     public String say(){
-        User user = new User();
-        user.setPassword("123456");
-        user.setUserAccount("account");
-        user.setUserDescribe("desc");
-        user.setUserName("qiang");
-        user.setUserType(1);
-        userService.addUser(user);
+//        User user = new User();
+//        user.setPassword("123456");
+//        user.setUserAccount("account");
+//        user.setUserDescribe("desc");
+//        user.setUserName("qiang");
+//        user.setUserType(1);
+//        userService.addUser(user);
         return "hello";
     }
 
