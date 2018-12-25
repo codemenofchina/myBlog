@@ -23,6 +23,6 @@ CREATE TABLE menu (
   menu_name varchar(64) NOT NULL,
   parent_id varchar(32) NOT NULL,
   menu_order int(2) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`menu_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
