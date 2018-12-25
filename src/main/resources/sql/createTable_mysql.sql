@@ -4,7 +4,7 @@ CREATE TABLE user (
   password varchar(128) NOT NULL COMMENT '密码',
   user_name varchar(64) NOT NULL COMMENT '用户名',
   user_type int(2) NOT NULL DEFAULT '1' COMMENT '用户种类，默认为1',
-  user_describe varchar(256) DEFAULT NULL COMMENT '秒速',
+  user_describe varchar(256) DEFAULT NULL COMMENT '描述',
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
